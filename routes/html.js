@@ -5,4 +5,4 @@ router.get("/stats", (req, res) => res.sendFile(path.join(__dirname, "../public/
 
 router.get("/exercise", (req, res) => res.sendFile(path.join(__dirname, "../public/exercise.html")));
 
-module.exports = router
+module.exports = router;

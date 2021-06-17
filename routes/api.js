@@ -36,6 +36,7 @@ router.get("/api/workouts/range", (req, res) => {
   Workout.aggregate(
   [
     {
+      // Takes all durations from workouts and adds them together
       $addFields: {
         totalDuration: {
           $sum: '$exercises.duration'
