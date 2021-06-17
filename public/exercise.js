@@ -21,14 +21,13 @@ async function initExercise() {
   let workout;
 
   if (location.search.split("=")[1] === undefined) {
-    workout = await API.createWorkout()
-    console.log(workout)
-  }
+    workout = await API.createWorkout();
+    console.log(workout);
+  };
   if (workout) {
     location.search = "?id=" + workout._id;
-  }
-
-}
+  };
+};
 
 initExercise();
 
@@ -44,10 +43,10 @@ function handleWorkoutTypeChange(event) {
   } else {
     cardioForm.classList.add("d-none");
     resistanceForm.classList.add("d-none");
-  }
+  };
 
   validateInputs();
-}
+};
 
 function validateInputs() {
   let isValid = true;
@@ -55,36 +54,36 @@ function validateInputs() {
   if (workoutType === "resistance") {
     if (nameInput.value.trim() === "") {
       isValid = false;
-    }
+    };
 
     if (weightInput.value.trim() === "") {
       isValid = false;
-    }
+    };
 
     if (setsInput.value.trim() === "") {
       isValid = false;
-    }
+    };
 
     if (repsInput.value.trim() === "") {
       isValid = false;
-    }
+    };
 
     if (resistanceDurationInput.value.trim() === "") {
       isValid = false;
-    }
+    };
   } else if (workoutType === "cardio") {
     if (cardioNameInput.value.trim() === "") {
       isValid = false;
-    }
+    };
 
     if (durationInput.value.trim() === "") {
       isValid = false;
-    }
+    };
 
     if (distanceInput.value.trim() === "") {
       isValid = false;
-    }
-  }
+    };
+  };
 
   if (isValid) {
     completeButton.removeAttribute("disabled");
@@ -92,8 +91,8 @@ function validateInputs() {
   } else {
     completeButton.setAttribute("disabled", true);
     addButton.setAttribute("disabled", true);
-  }
-}
+  };
+};
 
 async function handleFormSubmit(event) {
   event.preventDefault();
@@ -112,19 +111,19 @@ async function handleFormSubmit(event) {
     workoutData.sets = Number(setsInput.value.trim());
     workoutData.reps = Number(repsInput.value.trim());
     workoutData.duration = Number(resistanceDurationInput.value.trim());
-  }
+  };
 
   await API.addExercise(workoutData);
   clearInputs();
   toast.classList.add("success");
-}
+};
 
 function handleToastAnimationEnd() {
   toast.removeAttribute("class");
   if (shouldNavigateAway) {
     location.href = "/";
-  }
-}
+  };
+};
 
 function clearInputs() {
   cardioNameInput.value = "";
@@ -135,20 +134,20 @@ function clearInputs() {
   repsInput.value = "";
   resistanceDurationInput.value = "";
   weightInput.value = "";
-}
+};
 
 if (workoutTypeSelect) {
   workoutTypeSelect.addEventListener("change", handleWorkoutTypeChange);
-}
+};
 if (completeButton) {
   completeButton.addEventListener("click", function (event) {
     shouldNavigateAway = true;
     handleFormSubmit(event);
   });
-}
+};
 if (addButton) {
   addButton.addEventListener("click", handleFormSubmit);
-}
+};
 toast.addEventListener("animationend", handleToastAnimationEnd);
 
 document

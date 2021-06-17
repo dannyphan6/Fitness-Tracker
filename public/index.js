@@ -7,7 +7,6 @@ async function init() {
       location.search = "?id=" + workout._id;
     } else {
       document.querySelector("#continue-btn").classList.add("d-none")
-    }
-  }
-}
-
+    };
+  };
+};
