@@ -19,7 +19,7 @@ function generatePalette() {
   ];
 
   return arr;
-}
+};
 
 function populateChart(data) {
   let durations = data.map(({ totalDuration }) => totalDuration);
@@ -171,7 +171,7 @@ function populateChart(data) {
       },
     },
   });
-}
+};
 
 function calculateTotalWeight(data) {
   let totals = [];
@@ -189,7 +189,7 @@ function calculateTotalWeight(data) {
   });
 
   return totals;
-}
+};
 
 function workoutNames(data) {
   let workouts = [];
@@ -202,7 +202,7 @@ function workoutNames(data) {
 
   // return de-duplicated array with JavaScript `Set` object
   return [...new Set(workouts)];
-}
+};
 
 // get all workout data from back-end
 API.getWorkoutsInRange().then(populateChart);
