@@ -434,9 +434,7 @@ form > button {
   50% {
     opacity: 1;
     right: 10px;
-  }; 
-  
-  100% {
+  };100% {
     opacity: 0;
     right: -320px;
   };};

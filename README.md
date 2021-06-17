@@ -10,7 +10,7 @@
 * [Questions](#questions)
 
 ## Project Description
-
+Want to live a healthy lifestyle or get in shape for the summer? If you are, then Fitness Tracker is a great way to help you achieve your fitness goals! On any given day, you're able to view, create, and track daily workouts.  
 
 Below is an example that shows the application's appearance and functionality:
 
