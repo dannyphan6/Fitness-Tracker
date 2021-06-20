@@ -20,13 +20,13 @@ Below is an example that shows the application's appearance and functionality:
 ## Deployed Link
 Please feel free to visit the live web application. Link is below.
 
-[Fitness Tracker]()
+[Fitness Tracker](https://guarded-refuge-18987.herokuapp.com/)
 
 ## Installation
 Before running the application, the user must execute the command "npm install" to install all of the required dependencies. You're all set once all dependencies are installed!
 
 ## Usage
-In order to run this application locally, run the command "npm start" in the terminal. This will execute the application where the 
+In order to use this application, please visit the link above. This project was created utilizing HTML, CSS, JavaScript, Node, Express, MongoDB, and Mongoose. 
 
 ## Contributors
 Please feel free to create pull requests. They will be reviewed before merging. If you would like to make any major changes, please open an issue to discuss these changes.
