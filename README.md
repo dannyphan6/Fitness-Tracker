@@ -10,26 +10,17 @@
 * [Questions](#questions)
 
 ## Project Description
-Want to live a healthy lifestyle or get in shape for the summer? If you are, then Fitness Tracker is a great way to help you achieve your fitness goals! On any given day, you're able to view, create, and track daily workouts.  
+Want to live a healthy lifestyle or get in shape for the summer? If you are, then Fitness Tracker is a great way to help you achieve your fitness goals! On any given day, you're able to view, create, and track daily workouts. Furthermore, you'd be able to track the name, type, weight, sets, reps, and duration of the exercise. If the exercise is a cardio exercise, you'll be able to track the distance traveled. The journey to a healthy lifestyle starts here! Let's begin! 
 
 Below is an example that shows the application's appearance and functionality:
 
-## Home Page
-![Tech-Blog-Home-Page]()
-
-## All Posts
-![Tech-Blog-Single-Post-Page]()
-
-## Single Post
-![Tech-Blog-Edit-Post-Page]()
-
-## Update Post
-![Tech-Blog-Update-Post-Page]()
+## Fitness Tracker
+![Fitness-Tracker](./public/images/fitness-tracker.PNG)
 
 ## Deployed Link
 Please feel free to visit the live web application. Link is below.
 
-[Tech-Blog]()
+[Fitness Tracker]()
 
 ## Installation
 Before running the application, the user must execute the command "npm install" to install all of the required dependencies. You're all set once all dependencies are installed!
